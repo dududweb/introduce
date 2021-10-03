@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>dududWEB</title>
+</head>
+<body>
+  <div id="contents">
+    <header id="header">
+      <a href="index.html"><h1 id="logo">dududWEB*</h1></a>
+      <div class="menu-wrap">
+        <a id="openMenu"href="#" ><i class="fas fa-bars"></i></a>
+        <div id="sideMenu" >
+          <div class="list-wrap">
+            <ul class="list-menu">
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="">PROJECT</a></li>
+            </ul> 
+        </div>
+      </div>   
+      </div>
+      <nav class="navbar">
+        <ul>
+         <li><a href="about.html">ABOUT</a></li>
+         <li><a href="prject.html">PROJECT</a></li>
+        </ul> 
+      </nav>
+    </header>
+    
+    <section id="section">
+     <div class="main-box-wrap">
+        <div class="main-box">
+          <img src="img/22.jpeg" alt="">
+          <h2 class="main-text">ABOUT</h2>
+        </div>
+        <div class="main-box">
+          <img src="img/eye.jpg" alt="">
+          <h2 class="main-text">PROJECT</h2>
+        </div>
+     </div>
+   </section>
+
+
+   <footer id="footer">
+     <div class="footer-wrap">
+      <p>dududweb*</p>
+      <p><a href="mailto:joodudsdx@gmail.com" title="마우스 올렸을 때 나타나는 문구">joodudsdx@gmail.com</a></p>
+      <p>instagram <a href="https://www.instagram.com/joodudud/">@joodudud</a></p>
+      <p>+82)1029852796</p>
+     </div>
+     <div class="footer-wrap">
+      <p><a href="https://github.com/dududweb">github.com/dududweb</a></p>
+      <p><a href="https://dududweb.tistory.com/">dududweb.tistory.com/</a></p>
+      <br>
+      <p>**</p>
+     </div>
+  </footer>
+  </div> 
+
+  <script>
+    let open = document.getElementById('openMenu');
+    let sideSlide = document.getElementById('sideMenu');
+    let close = document.getElementsByClassName('close');
+    
+    
+      open.addEventListener('click', function(){
+       if(sideSlide.style.right == '-3000px'){
+          sideSlide.style.right = 0;
+          open.innerHTML = "<i class='fas fa-times'></i>";
+       }
+       else{
+          sideSlide.style.right = '-3000px';
+          open.innerHTML = "<i class='fas fa-bars'></i>";
+       }
+      })
+     
+        
+
+ 
+  </script>
+</body>
+</html>

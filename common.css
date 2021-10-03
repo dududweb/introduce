@@ -1,0 +1,127 @@
+*{
+  margin:0;
+  padding:0; 
+  box-sizing: border-box;
+  list-style: none; 
+  text-decoration: none;
+  list-style-type: none;
+}
+body{
+  font-family: 'Lato',
+   sans-serif; font-family: 'Noto Sans KR',
+   sans-serif;
+}
+p,a,h1,h2,h3,h4,h5,span{
+  color: #333;
+}
+
+/* header 영역입니다. */
+#contents{
+  position: relative;
+  margin: 0 auto; 
+  width: 100%;
+  padding: 0 15px;
+}
+.navbar{
+  display: none;
+}
+#header{
+  width: 100%;
+  position: fixed;
+  line-height: 40px;
+  left:0;
+  top: 0;
+  display: inline-block;
+  z-index: 100;
+  padding: 10px 0;
+  background: #fff;
+}
+#logo{
+  font-size: 20px;
+  position:relative;
+  left: 15px;
+}
+#openMenu{
+  position: absolute;
+  right: 15px; 
+  top: 10px;
+  font-size: 22px; 
+  z-index: 99;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+}
+#sideMenu{
+
+  width: 100%;
+  z-index: 2;
+  height: 100vh;
+  position: fixed;
+  right: -3000px;
+  top: 0;
+  height: 100%;  
+  background:#f33;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+
+}
+.list-wrap{
+  margin-top: 100px;
+  transition: all 1s;
+}
+.list-menu{
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  
+  /* right: -300px; */
+
+}
+.list-menu li{
+  padding: 10px 0;
+}
+
+
+/* header 영역입니다. */
+
+/* footer 영역입니다. */
+
+#footer{
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+}
+#footer .footer-wrap{
+  width: 50%;
+}
+#footer a{
+  text-decoration: underline;
+}
+/* footer 영역입니다. */
+
+
+@media(min-width:980px){
+
+  .menu-wrap{
+    display: none;
+  }
+  #logo{
+    font-size: 30px;
+  }
+  .navbar{
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 27px;
+  }
+  .navbar ul li {
+    float: left;
+    padding-left: 50px;
+  }
+  #footer{
+    font-size: 15px;
+  }
+  #footer .footer-wrap{
+    width: 30%;
+  }
+}
