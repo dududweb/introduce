@@ -42,18 +42,18 @@
   position: relative;
   font-size: 35px;
 }
-.panel-heading #panel-toggle{
+.panel-heading .panel-toggle{
   position: absolute;
   right: 10px;
 }
 
 .panel-body {
-  padding: 10px 0;
+  padding: 15px 0 30px 0;
   display: none;
   width: 100%;
 }
 .panel-body p{
-  font-size: 12px;
+  font-size: 22px;
   padding: 10px;
 }
 .panel-body img{width: 100%;}
@@ -110,5 +110,8 @@
   #section .main-box img:hover{
     transition: opacity .2s ease-in-out;
     opacity: 0.2;
+  }
+  .panel-body p{
+    font-size: 27px;
   }
 }
