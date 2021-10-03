@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="main.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -66,6 +67,25 @@
      </div>
   </footer>
   </div> 
-  <script type="text/javascript" src="main.js" defer></script>
+  <script>
+    
+//main
+let open = document.getElementById('openMenu');
+let sideSlide = document.getElementById('sideMenu');
+let close = document.getElementsByClassName('close');
+    
+    
+      open.addEventListener('click', function(){
+       if(sideSlide.style.right == '-3000px'){
+          sideSlide.style.right = 0;
+          open.innerHTML = "<i class='fas fa-times'></i>";
+       }
+       else{
+          sideSlide.style.right = '-3000px';
+          open.innerHTML = "<i class='fas fa-bars'></i>";
+       }
+      })
+
+  </script>
 </body>
 </html>
