@@ -22,6 +22,9 @@
   #section .main-box-wrap{
     flex-direction: row;
   }
+  #logo{
+    padding: 15px 0;
+  }
   #section .main-box-wrap .main-box{
     position: relative;
     width: 50%;
