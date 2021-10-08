@@ -135,7 +135,7 @@
  </footer>
  </div>
  <script>
-   //about
+   
    let open = document.getElementById('openMenu');
       let sideSlide = document.getElementById('sideMenu');
       let close = document.getElementsByClassName('close');
@@ -159,11 +159,13 @@
   //제목을 클릭하면 할일
   
             for(var i = 0; i<heading.length; i++ ){
-              heading[i].addEventListener('click', function(e){
-                for(var x=0; x < question.length; x++){
+                
+                   heading[i].addEventListener('click', function(e){
+                   for(var x=0; x < question.length; x++){
                    question[x].classList.remove('active');
                    e.target.parentNode.classList.add('active');  // 어떤헤딩을 클릭한건지 알 수 있다.
                    activateBody();
+                   
                 }
               });
             }
