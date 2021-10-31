@@ -2,7 +2,19 @@ const questionWrap = document.querySelectorAll(".panel-question");
 const questionHeading = document.querySelectorAll(".panel-heading");
 const answerContents = document.querySelectorAll(".panel-body");
 const changeToggle = document.querySelectorAll(".panel-toggle");
+const allCloseBtn = document.querySelector(".closeAllBtn");
+const allOpenBtn = document.querySelector(".openAllBtn");
 
+function handleCloseAll(){
+  for(let i = 0; i < questionWrap.length; i++){
+    questionWrap[i].classList.remove("active");
+  }
+}
+function handleOpenAll(){
+  for(let i = 0; i < questionWrap.length; i++){
+    questionWrap[i].classList.add("active");
+  }
+}
 
 for(let i = 0; i < questionWrap.length; i++){
   questionWrap[i].addEventListener("click", function(){
@@ -12,6 +24,10 @@ for(let i = 0; i < questionWrap.length; i++){
     questionWrap[i].classList.add("active");
   });
 }
+
+
+allOpenBtn.addEventListener("click", handleOpenAll)
+allCloseBtn.addEventListener("click", handleCloseAll)
 
 
 
